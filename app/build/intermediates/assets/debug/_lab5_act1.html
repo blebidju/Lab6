@@ -1,0 +1,37 @@
+<html><head>
+
+<title>Weather</title>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+</style></head><body>
+
+<script src="./_lab5_act1.js" type="text/javascript"></script>
+
+<p id = "error"></p>
+
+<div id="Table">
+<script type="text/javascript">grabInfo()</script>
+</div>
+
+<p>
+Please Select A Third City: 
+<select id = "Select City" onchange = "createThirdCity()">
+  <option value="524901">Moscow</option>
+  <option value="5128638">New York</option>
+  <option value="5368361">Los Angeles</option>
+  <option value="1850147">Tokyo</option>
+  <option value="2147714">Sydney</option>
+</select>
+</p>
+
+<input type="button" value="Refresh" id = "RefreshButton" onclick="refreshPage()"/> 
+
+<p id = "AverageWeather">
+</p>
+
+</body></html>
